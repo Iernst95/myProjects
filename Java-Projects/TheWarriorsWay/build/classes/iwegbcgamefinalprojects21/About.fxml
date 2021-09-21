@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iwegbcgamefinalprojects21.MainMenuController">
+   <children>
+      <ImageView fitHeight="641.0" fitWidth="978.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/MainMenuBackground.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="32.0" layoutY="530.0" mnemonicParsing="false" onAction="#backToMainMenuButtonPressed" prefHeight="79.0" prefWidth="196.0" text="Back">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="24.0" />
+         </font>
+      </Button>
+      <Text layoutX="36.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This game was created by Isaac Ernst in the Spring Semester of 2021 at the University of Missouri. This game, called &quot;The Warriors Way&quot; is my final project. In the game, you create a character and upgrade him as you fight tougher and tougher enemies. You can upgrade your characters stats such as health, stamina, speed, and strength. You can also save your character and load it later and continue to play! The game has lots of room to be improved upon.  I would like to work on it during the summer and try to make it better and more fun. In the mean time; test it out, play it a bit, and let me know what you think about it! " wrappingWidth="797.22900390625">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="34.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

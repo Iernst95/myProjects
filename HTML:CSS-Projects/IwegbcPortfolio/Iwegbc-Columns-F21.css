@@ -1,0 +1,94 @@
+#h1{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: #950740
+}
+#navBar{
+    background-color:#1a1a1d;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0px;
+}
+.navName{
+    color: #950740;
+    text-align: center;
+    margin: 8px;
+    font-size: 30px;
+    font-family:'Courier New', Courier, monospace;
+}
+body{
+    background-color: #4e4e50;
+}
+#left, #right{
+    float: left;
+    text-align: center;
+    height: 425px;
+    padding: 20px;
+    margin: 23px;
+    border: solid 9px #4e4e50;
+    border-radius: 40px;
+   
+}
+#left{
+    width: 251px;
+}
+#right{
+    width: 223px;
+}
+#middle{
+    float: left;
+    text-align: center;
+    width: 432px;
+    margin: 23px;
+   
+}
+#topMiddle{
+    width: 376px;
+    height: 211px;
+    padding: 22px;
+    border: solid 6px #4e4e50;
+    border-radius: 40px;
+}
+#bottomMiddle{
+    width: 376px;
+    height: 130px;
+    padding: 22px;
+    margin-top: 30px;
+    border: solid 6px #4e4e50;
+    border-radius: 40px;
+
+}
+#wrapper{
+    width: 1160px;
+    background-color: #1a1a1d;
+    border: solid 10px;
+    border-radius: 30px;
+    padding: 11px;
+    /* the 5 lines below were taken from source 1 */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+}
+.group:after{
+    content: "";
+    clear: both;
+    display: table;
+   
+}
+.headings{
+    font-size: 25px;
+    font-family:'Courier New', Courier, monospace;
+    color: #950740;
+}
+.paragraphs{
+    font-size: 18px;
+    text-align: left;
+    font-family:'Courier New', Courier, monospace;
+    color: #c3073f; 
+    
+
+}

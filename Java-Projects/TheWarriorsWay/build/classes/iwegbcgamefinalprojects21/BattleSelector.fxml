@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iwegbcgamefinalprojects21.BattleSelectorController">
+   <children>
+      <ImageView fitHeight="641.0" fitWidth="978.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/MainMenuBackground.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="262.0" layoutY="43.0" text="Select Your Battle">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="46.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="126.0" fitWidth="237.0" layoutX="86.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/DarkWoods.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="148.0" fitWidth="229.0" layoutX="541.0" layoutY="214.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/GraveyardBackground.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="116.0" fitWidth="239.0" layoutX="312.0" layoutY="464.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/LavaBackground2.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="88.0" layoutY="217.0" mnemonicParsing="false" onAction="#easyLevelButtonPressed" opacity="0.0" prefHeight="123.0" prefWidth="237.0" />
+      <Button layoutX="537.0" layoutY="214.0" mnemonicParsing="false" onAction="#mediumLevelButtonPressed" opacity="0.0" prefHeight="148.0" prefWidth="229.0" />
+      <Button layoutX="312.0" layoutY="465.0" mnemonicParsing="false" onAction="#hardLevelButtonPressed" opacity="0.0" prefHeight="113.0" prefWidth="243.0" />
+      <Button layoutX="18.0" layoutY="569.0" mnemonicParsing="false" onAction="#backButtonPressed" prefHeight="58.0" prefWidth="88.0" text="Back">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="75.0" layoutY="113.0" text="Dark Woods">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="121.0" layoutY="174.0" text="Difficulty Level: Easy">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="546.0" layoutY="113.0" text="Graveyard">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="344.0" layoutY="363.0" text="Lava Pits">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="352.0" layoutY="424.0" text="Difficulty Level: Hard">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="552.0" layoutY="174.0" text="Difficulty Level: Medium">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

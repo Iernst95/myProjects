@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- 
+            Sources:
+            Source 1:http://catalog.missouri.edu/courseofferings/cmp_sc/  
+                -> all Course Descriptions were referenced from this link
+            Source 2: https://getbootstrap.com/docs/5.0/components/card/#about
+            Source 3: https://stackoverflow.com/questions/37287153/how-to-get-images-in-bootstraps-card-to-be-the-same-height-width/53252725
+
+         -->
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+              rel="stylesheet" 
+              integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+              crossorigin="anonymous">
+        <link rel="stylesheet" 
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+              crossorigin="anonymous">
+        <link rel="stylesheet" href="Iwegbc-TablesCards-F21.css">
+        <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@1,300&display=swap" rel="stylesheet">
+
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@1,300&display=swap" rel="stylesheet">
+
+        <title>Courses</title>
+    </head>
+    <body>
+        <div class="navBar">
+            <a href="Iwegbc-Portfolio-F21.html" class="navName"> ISAAC ERNST</a>
+            <a href="Iwegbc-Columns-F21.html" class="navName"> SKILLS</a>
+            <a href="Iwegbc-TablesCards-F21.html" class="navName" > COURSES TAKEN </a>
+        </div>
+        <div class="container-fluid tableColor">
+            <table class="table colorTable">
+                <thead class="colorTable">
+                    <tr> 
+                        <th colspan="8" class="header"> Ernst Course History</th> 
+                    </tr>
+                    <tr id="secondHeader" class="header colorTable">
+                        <th colspan="8" >
+                        <img id="tigerLeft" src="mu-tiger.png" alt="tiger">
+                        University of Missouri-Columbia
+                        <img id="tigerRight" src="mu-tiger.png" alt="tiger">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Department</th>
+                        <th>Course #</th>
+                        <th>Course name</th>
+                        <th>Instructor</th>
+                        <th>Course Description</th>
+                        <th>Grade</th>
+                        <th>Credit Hours</th>
+                        <th>Knowledge Gained</th>
+                    </tr>
+                </thead>
+                <tbody class="colorTable">
+                    <tr>
+                        <td rowspan="4" id="cs" class="align-middle">CS</td>
+                        <td>3330</td>
+                        <td>Object Oriented Programming</td>
+                        <td>Nickolas Wergeles</td>
+                        <td>This course focuses on object-oriented programming concepts:  abstraction, polymorphism, encapsulation, inheritance, interfaces, abstract classes, files, streams, and object serialization.  Topics such as GUI and event-driven programming are also tackled.</td>
+                        <td>A-</td>
+                        <td>3</td>
+                        <td>Java, JavaFX</td>
+
+                    </tr>
+                    <tr>
+                        <td>2830</td>
+                        <td>Web Developement I</td>
+                        <td>Nickolas Wergeles</td>
+                        <td>This course will attempt to provide a comprehensive understanding of the evolution, the technologies, and the tools of the Internet. In particular, issues pertaining to the World Wide Web and Multimedia (HTML, CGI, Web based applications) will be discussed in detail.</td>
+                        <td>N/A</td>
+                        <td>3</td>
+                        <td>HTML, CSS </td>
+                    </tr>
+                    <tr>
+                        <td>3050</td>
+                        <td>Advanced Algorithm Design</td>
+                        <td>Youssef Saab</td>
+                        <td>This class surveys fundamental algorithms and data structures that have wide practical applicability, including search trees and graph algorithms.  Emphasis is placed on techniques for efficient implementation and good software development methodologies.</td>
+                        <td>A</td>
+                        <td>3</td>
+                        <td>Understanding Algorithms </td>
+                    </tr>
+                    <tr>
+                        <td>4050</td>
+                        <td>Design and Analysis of Algorithms I</td>
+                        <td>Youssef Saab</td>
+                        <td> This course reviews and extends earlier work with linked structures, sorting and searching algorithms, and recursion. Graph algorithms, string matching, combinatorial search, geometrical algorithms and related topics are also studied.</td>
+                        <td>A+</td>
+                        <td>3</td>
+                        <td>Design of Algorithms </td> 
+                    </tr>
+                    <tr >
+                        <td rowspan="3" id="infotc" class="align-middle">INFOTC</td>
+                        <td>4401</td>
+                        <td>Python I</td>
+                        <td>Dale Musser</td>
+                        <td> An introduction to the Python 3 programming language, covering various topics and paradigms. </td>
+                        <td>A</td>
+                        <td>3</td>
+                        <td>Python</td> 
+                    </tr>
+                    <tr>
+                        <td>4405</td>
+                        <td>iOS App Developement I</td>
+                        <td>Dale Musser</td>
+                        <td>This is a first in a series of courses on developing iOS applications using Xcode, and the Swift programming language on the macOS platform.</td>
+                        <td>A-</td>
+                        <td>3</td>
+                        <td>Swift, Xcode iOS app Developement</td> 
+                    </tr>
+                    <tr>
+                        <td>3530</td>
+                        <td>Unix Operating Systems</td>
+                        <td>Ronny Bazan</td>
+                        <td> This course is an introduction to UNIX and UNIX-like operating systems and interfaces, to include the file system, command shells, text editors, pipes and filters, input/output system, shell scripting and Regular Expressions. The course will also incorporate an aspect of programming in a UNIX environment, cloud computing, containers and an introduction to System Administration.</td>
+                        <td>A-</td>
+                        <td>3</td>
+                        <td>Unix Environments</td> 
+                    </tr>
+                    <tr>
+                        <td id="math" class="align-middle">MATH</td>
+                        <td>2320</td>
+                        <td>Discrete Math Structures</td>
+                        <td>Allanus Tsoi</td>
+                        <td> Sets, functions, logic, relations, induction, recursion, counting techniques, graphs, trees, algorithms.  Math Reasoning Proficiency course.</td>
+                        <td>N/A</td>
+                        <td>3</td>
+                        <td>Discrete Math Logic</td> 
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>  
+        <!-- The card references in the div container below come from source 2-->
+        <div id="container">
+            <div class="row">
+                <div class="card  col-lg-4">
+                    <img class="card-img-top" src="Iwegbc-Picture.jpeg" alt="selfPortrait">
+                    <div class="card-body">
+                 
+                        <p class="card-text">My name is Isaac Ernst, I am a student at the University of Missouri-Columbia. I plan on graduating in 
+                            May 2023 with a B.S. of Science in Computer Science. </p>
+                            <p>101 Credit Hours Completed</p>
+                        <a href="https://www.linkedin.com/in/isaac-ernst-32332021b/" class="btn btn-primary">LinkedIn</a>
+                    </div>
+                   
+                </div>
+                <div  class="card mb-3 col-lg-4">
+                    <img class="card-img-top" src="Iwegbc-TheWarriorsWay.png" alt="WarriorsWay">
+                    <div class="card-body">
+                        <h5 class="card-title"> Favorite Project: The Warriors Way</h5>
+                        <p class="card-text">The Warriors Way is an RPG game I created. I used Java and JavaFX to create it. 
+                            It is a turn-based fighting adventure game that I created to showcase my Java Programming skills. </p>
+                    </div>
+                   
+                </div>
+                <div class="card mb-3 col-lg-4">
+                    <img class="card-img" src="Iwegbc-Java.jpg" alt="">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title"> Programming Languages</h5>
+                        <p class="card-text">Java</p>     
+                        <p class="card-text">Swift </p> 
+                        <p class="card-text">Python </p> 
+                        <p class="card-text">C</p> 
+                        <p class="card-text">HTML/CSS</p>
+                        <h5 class="card-title"> Technologies</h5> 
+                        <p class="card-text">HTML/CSS</p> 
+                        <p class="card-text">HTML/CSS</p>
+                        <p class="card-text">HTML/CSS</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <h2 class="footer">Last updated by Isaac Ernst with Iwegbc at: 9/17/21</h2>
+    </body>
+</html>

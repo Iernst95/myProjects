@@ -1,0 +1,91 @@
+.navBar{
+    background-color:#1a1a1d;
+    /* Source 2 is the 2 lines below*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0px;
+}
+.navName{
+    color: #950740;
+    text-align: center;
+    margin: 8px;
+    font-size: 28px;
+    font-family:'Courier New', Courier, monospace;
+    font-stretch: ultra-expanded;
+}
+/* Source 3 was used in the block below */
+#imagePortrait{
+    height: 30%;
+    display: block;
+    position: relative;
+    margin-top: 110px;
+    margin-bottom: 55px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    max-width: 300px;
+    border: 8px solid #950740
+}
+#nameDesc{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    position: relative;
+    color: #1a1a1d;
+}
+p{
+    color: #1a1a1d;
+    text-align: center;
+    font-size: 20px;  
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-color: #4e4e50;
+}
+/* Source 4 was used in the block below*/
+#vertically-centered{
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);  
+}
+.images{
+    position: relative;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+}
+#resume{
+    position: relative;
+    padding: 1px;
+    font-size: 32px;
+    font-family:'Courier New', Courier, monospace;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 100px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #950740;
+    background-color: #950740;
+    color: #1a1a1d;
+    vertical-align: middle;
+}
+/* Source 6 is used in the column and row class below*/
+.column{
+    padding: 10px
+}
+.row{
+    margin-left: 42.5%;
+    align-items: center;
+    display: flex;
+}
+

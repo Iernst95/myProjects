@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iwegbcgamefinalprojects21.MainMenuController">
+   <children>
+      <ImageView fitHeight="641.0" fitWidth="978.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/MainMenuBackground.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="newGameButton" layoutX="61.0" layoutY="443.0" mnemonicParsing="false" onAction="#newGameButtonPressed" prefHeight="72.0" prefWidth="198.0" text="New Game">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="33.0" />
+         </font>
+      </Button>
+      <Button fx:id="loadGameButton" layoutX="322.0" layoutY="442.0" mnemonicParsing="false" onAction="#loadGameButtonPressed" prefHeight="72.0" prefWidth="198.0" text="Load Game" AnchorPane.leftAnchor="322.0">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="32.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitButton" layoutX="590.0" layoutY="443.0" mnemonicParsing="false" onAction="#exitButtonPressed" prefHeight="72.0" prefWidth="198.0" text="Save/Exit">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="33.0" />
+         </font>
+      </Button>
+      <Label layoutX="63.0" layoutY="136.0" prefHeight="119.0" prefWidth="731.0" text="The Warriors Way">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="96.0" />
+         </font>
+      </Label>
+      <Button layoutX="20.0" layoutY="14.0" mnemonicParsing="false" onAction="#aboutButtonPressed" prefHeight="13.0" prefWidth="83.0" text="About">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

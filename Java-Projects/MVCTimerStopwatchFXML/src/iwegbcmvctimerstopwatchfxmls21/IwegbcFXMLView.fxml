@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="582.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iwegbcmvctimerstopwatchfxmls21.IwegbcMVCTimerStopwatchFXMLController">
+   <children>
+      <StackPane fx:id="stackpane" layoutX="67.0" layoutY="67.0" prefHeight="224.0" prefWidth="222.0">
+         <children>
+            <ImageView fx:id="clockfaceImage" fitHeight="223.0" fitWidth="285.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@fancyClock.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="handImage" fitHeight="299.0" fitWidth="223.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@fancyHand.png" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+      <Text fx:id="digitalTimerText" layoutX="152.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="--:--.--">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="timerText" layoutX="148.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Timer --:--">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="lapText" layoutX="138.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lap -: --:--.--">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="averageLapTimeText" layoutX="88.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Average Lap Time: :--:--.--" wrappingWidth="180.599609375">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <LineChart fx:id="lineChart" layoutX="367.0" layoutY="31.0" legendVisible="false" prefHeight="260.0" prefWidth="386.0" title="Recorded Lap Time">
+        <xAxis>
+          <CategoryAxis fx:id="lineChartXAxis" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="lineChartYAxis" autoRanging="false" side="LEFT" upperBound="5.0" />
+        </yAxis>
+      </LineChart>
+      <AreaChart fx:id="areaChart" layoutX="367.0" layoutY="307.0" legendVisible="false" prefHeight="252.0" prefWidth="386.0" title="Average Lap Time">
+        <xAxis>
+          <CategoryAxis fx:id="areaChartXAxis" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="areaChartYAxis" autoRanging="false" side="LEFT" upperBound="5.0" />
+        </yAxis>
+      </AreaChart>
+      <Button fx:id="startStopButton" layoutX="67.0" layoutY="511.0" mnemonicParsing="false" onAction="#startStopButtonAction" prefHeight="27.0" prefWidth="96.0" text="Start" />
+      <Button fx:id="resetRecordButton" layoutX="176.0" layoutY="511.0" mnemonicParsing="false" onAction="#recordResetButtonAction" prefHeight="27.0" prefWidth="96.0" text="Record" />
+      <Label layoutX="85.0" layoutY="24.0" text="Isaac's Stopwatch ">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

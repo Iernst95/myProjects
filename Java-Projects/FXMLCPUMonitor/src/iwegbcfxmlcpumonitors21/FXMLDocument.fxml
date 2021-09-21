@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="394.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iwegbcfxmlcpumonitors21.IwegbcFXMLDocumentController">
+    <children>
+      <StackPane fx:id="dialStackPane" layoutX="68.0" layoutY="25.0" prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="dialImage" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@mygauge.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="handImage" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" rotate="195.0">
+               <image>
+                  <Image url="@hand.png" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+      <LineChart fx:id="recordedCPUlineChart" layoutX="288.0" layoutY="25.0" prefHeight="185.0" prefWidth="309.0" title="Recorded CPU Usage">
+        <xAxis>
+          <CategoryAxis fx:id="lineChartXAxis" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="lineChartYAxis" autoRanging="false" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <AreaChart fx:id="areaChart" layoutX="288.0" layoutY="212.0" prefHeight="178.0" prefWidth="309.0" title="Mean CPU Load">
+        <xAxis>
+          <CategoryAxis fx:id="areaChartXAxis" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="areaChartYAxis" autoRanging="false" side="LEFT" />
+        </yAxis>
+      </AreaChart>
+      <Button fx:id="startStopButton" layoutX="100.0" layoutY="230.0" mnemonicParsing="false" onAction="#startStopButton" text="Start" />
+      <Button fx:id="recordResetButton" layoutX="180.0" layoutY="230.0" mnemonicParsing="false" onAction="#recordResetButton" text="Record" />
+      <Text fx:id="CPUPercentageUsed" layoutX="142.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.00%">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Label fx:id="peakCPULabel" layoutX="54.0" layoutY="278.0" text="Peak CPU Usage: 00.00%">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="meanCPULabel" layoutX="52.0" layoutY="315.0" text="Mean CPU Usage: 00.00%">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

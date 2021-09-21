@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iwegbcgamefinalprojects21.CreateCharacterController">
+   <children>
+      <ImageView fitHeight="641.0" fitWidth="978.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/MainMenuBackground.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="35.0" layoutY="18.0" text="Character Menu">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="46.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="characterImageGif" fitHeight="361.0" fitWidth="401.0" layoutX="85.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/WarriorStanding.gif" />
+         </image>
+      </ImageView>
+      <Button layoutX="662.0" layoutY="564.0" mnemonicParsing="false" onAction="#playGameButtonPressed" prefHeight="58.0" prefWidth="178.0" text="Play Game">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="24.0" />
+         </font></Button>
+      <Button layoutX="14.0" layoutY="564.0" mnemonicParsing="false" onAction="#backButtonPressed" prefHeight="58.0" prefWidth="178.0" text="Back">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="24.0" />
+         </font></Button>
+      <Button layoutX="755.0" layoutY="470.0" mnemonicParsing="false" onAction="#HealthPlusPressed" text="+" />
+      <Button layoutX="755.0" layoutY="255.0" mnemonicParsing="false" onAction="#strengthPlusPressed" text="+" />
+      <Button layoutX="755.0" layoutY="328.0" mnemonicParsing="false" onAction="#speedPlusPressed" text="+" />
+      <Button layoutX="755.0" layoutY="402.0" mnemonicParsing="false" onAction="#staminaPlusPressed" text="+" />
+      <Label layoutX="511.0" layoutY="61.0" text="Character Name: ">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="512.0" layoutY="205.0" text="Points Left: ">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="20.0" />
+         </font>
+      </Label>
+      <Text fx:id="pointsLeftText" fill="#000000bc" layoutX="705.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20" wrappingWidth="26.0">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="20.0" />
+         </font>
+      </Text>
+      <Label layoutX="491.0" layoutY="154.0" text="Upgrade Your Character:">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="512.0" layoutY="253.0" text="Strength">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="517.0" layoutY="327.0" prefHeight="26.0" prefWidth="71.0" text="Speed">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="515.0" layoutY="398.0" text="Stamina">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="516.0" layoutY="470.0" text="Health">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="642.0" layoutY="255.0" mnemonicParsing="false" onAction="#strengthMinusPressed" text="-">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="642.0" layoutY="328.0" mnemonicParsing="false" onAction="#speedMinusPressed" text="-" />
+      <Button layoutX="642.0" layoutY="400.0" mnemonicParsing="false" onAction="#staminaMinusPressed" text="-" />
+      <Button layoutX="642.0" layoutY="470.0" mnemonicParsing="false" onAction="#HealthMinusPressed" text="-" />
+      <Text fx:id="speedPoints" fill="#000000bc" layoutX="697.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="35.0">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="strengthPoints" fill="#000000bc" layoutX="696.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="35.0">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="healthPoints" fill="#000000bc" layoutX="694.0" layoutY="489.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="44.0">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="staminaPoints" fill="#000000bc" layoutX="698.0" layoutY="419.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="35.0">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="characterNameText" layoutX="496.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="292.0">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="477.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(Increases Attack Damage)" wrappingWidth="166.22900390625">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="478.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(Increases Dodge Chance)" wrappingWidth="166.22900390625">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="498.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(Increases Stamina)" wrappingWidth="166.22900390625">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="497.0" layoutY="506.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(Increases Health)" wrappingWidth="166.22900390625">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="13.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

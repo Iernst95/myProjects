@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+    Name: Isaac Ernst
+    Pawprint: iwegbc
+    Date: 8-30-21
+    Challenge: Portfolio F21
+
+    Source 1: https://www.w3schools.com/howto/howto_js_topnav.asp
+    Source 2: https://www.w3schools.com/howto/howto_css_fixed_menu.asp
+    Source 3: https://www.w3schools.com/howto/howto_css_image_center.asp
+    Source 4: https://www.w3schools.com/css/css_align.asp
+    Source 5: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_image
+    Source 6: https://www.w3schools.com/howto/howto_css_images_side_by_side.asp
+
+    Bonus opportunity to center eveything vertically and horizontally was
+    completed
+
+    Bonus opportunity of adding resume, linkedin, and github was completed
+
+-->
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <title>IsaacErnst</title>
+         <!-- The line below was taken from the content in lecture-->
+         <link rel="stylesheet" type="text/css" href="Iwegbc-Portfolio-F21.css" >
+    </head>
+    <body>
+            <!--Source 1 is the line below-->
+            <div class="navBar">
+                <a href="Iwegbc-Portfolio-F21.html" class="navName">ISAAC ERNST</a>
+                <a href="Iwegbc-Columns-F21.html" class="navName"> SKILLS</a>
+                <a href="Iwegbc-TablesCards-F21.html" class="navName" > COURSES TAKEN </a>
+            </div>
+            <div id="vertically-centered">
+                <div>
+                    <img id="imagePortrait" src= "Iwegbc-Picture.jpeg" alt = "Picture of me">
+                </div>
+                <div> 
+                    <h2 id="nameDesc"> Isaac Ernst </h2>                 
+                </div>
+                <div>   
+                    <p>
+                        "Aspiring Software Developer from the University of Missouri-Columbia"
+                    </p>
+                </div>
+
+                <div class="row">
+                    
+                    <!-- Source 5 was used below to turn an image into a link-->
+                    <div class="column">
+                        <a href="https://www.linkedin.com/in/isaac-ernst-32332021b/" > <img class="images" src="Iwegbc-Linkedin.png" alt="linkedin"></a>
+                    </div>
+                    <div class="column">
+                        <a id="resume" href="Iwegbc-Resume.docx">Resume</a>
+                    </div>
+                    <div class="column">
+                        <a href="https://github.com/Iernst95" > <img class="images" src="Iwegbc-GitHub.png" alt="github"></a>
+                    </div> 
+
+                </div>
+            </div>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iwegbcgamefinalprojects21.LoadCharacterController">
+   <children>
+      <ImageView fitHeight="641.0" fitWidth="978.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/MainMenuBackground.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="loadCharacterButton" layoutX="581.0" layoutY="499.0" mnemonicParsing="false" onAction="#loadCharacterButtonPressed" prefHeight="91.0" prefWidth="219.0" text="Load Character">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" layoutX="53.0" layoutY="499.0" mnemonicParsing="false" onAction="#backButtonPressed" prefHeight="91.0" prefWidth="219.0" text="Back">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="25.0" />
+         </font>
+      </Button>
+      <Label layoutX="53.0" layoutY="38.0" prefHeight="72.0" prefWidth="211.0" text="Load Game">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="46.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="160.0" prefHeight="32.0" prefWidth="531.0" text="Select Your Saved Character: ">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="36.0" />
+         </font>
+      </Label>
+      <MenuBar layoutX="554.0" layoutY="171.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#loadCharacterFileOpened" text="Open" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextArea fx:id="characterDisplayArea" layoutX="53.0" layoutY="209.0" prefHeight="249.0" prefWidth="713.0">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="24.0" />
+         </font></TextArea>
+   </children>
+</AnchorPane>

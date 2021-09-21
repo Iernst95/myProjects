@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="561.0" prefWidth="952.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iwegbcgamefinalprojects21.BattleController">
+   <children>
+      <ImageView fitHeight="492.0" fitWidth="952.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/LavaBackground.gif" />
+         </image>
+      </ImageView>
+      <Button layoutY="400.0" mnemonicParsing="false" onAction="#stabAttackButtonPressed" prefHeight="81.0" prefWidth="254.0" text="Stab (5 Stamina)">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="254.0" layoutY="400.0" mnemonicParsing="false" onAction="#sliceAttackButtonPressed" prefHeight="82.0" prefWidth="254.0" text="Slice (10 Stamina)">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="-1.0" layoutY="482.0" mnemonicParsing="false" onAction="#lungeAttackButtonPressed" prefHeight="78.0" prefWidth="254.0" text="Lunge (20 Stamina)">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="254.0" layoutY="482.0" mnemonicParsing="false" onAction="#fleeButtonPressed" prefHeight="79.0" prefWidth="254.0" text="Flee (50 Stamina)">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="18.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="textArea" layoutX="508.0" layoutY="399.0" prefHeight="159.0" prefWidth="444.0">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="18.0" />
+         </font>
+      </TextArea>
+      <ImageView fx:id="warriorImage" fitHeight="218.0" fitWidth="97.0" layoutX="129.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/WarriorStanding.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="EnemyImage" fitHeight="230.0" fitWidth="356.0" layoutX="492.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/LavaEnemy.gif" />
+         </image>
+      </ImageView>
+      <Text fx:id="characterHealthText" fill="WHITE" layoutX="13.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Health: " wrappingWidth="235.9293441772461">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="enemyHealthText" fill="WHITE" layoutX="585.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Health: " wrappingWidth="235.9293441772461">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="staminaText" fill="WHITE" layoutX="15.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stamina:" wrappingWidth="235.9293441772461">
+         <font>
+            <Font name="Bodoni 72 Oldstyle Bold" size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
